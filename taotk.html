@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta  charset="utf-8">
+    <style>
+        body{
+            background-color: #336699;
+            margin: 0;
+            padding:0;
+            display: flex;
+            font-family: monospace;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            width:  300px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #333;
+            position: relative;
+
+        }
+        .container from{
+            text-align:  center;
+            line-height: 3rem;
+            color:deeppink;
+            z-index: 1;
+        }
+        from h2{
+
+            font-size: 30px;
+        }
+        from .box{
+            outline: none;
+            height: 40px;
+            width:80%;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+        from .btn{
+                height: 40px;
+                width: calc(85% + 10px);
+                outline: none;
+                background-color: deeppink;
+                border-radius: 10px;
+                color: aliceblue;
+                font-size: 18px;
+        }
+        from .btn:hover{
+            opacity:  .7;
+        }
+        from a{
+            text-decoration: none;
+            color: deeppink;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <from>
+                <h2> Tạo tài khoản mới</h2>
+                <input type="text" placeholder="tên đăng nhập" class="box">
+                <input type="text" placeholder="mật khẩu" class="box">
+                <input type="text" placeholder="nhập lại mật khẩu" class="box">
+                <input type="button" class="btn" value="Tạo tài khoản" id="btn">
+                <a href="index.html ">Quay về </a>
+            </from>
+        </div>
+        <script>
+            var btn = document.getElementById('btn');
+            btn.addEventListener("click", function(){
+        </script>
+    </body>
+</html>
